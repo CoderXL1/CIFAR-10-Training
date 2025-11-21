@@ -44,7 +44,7 @@ CIFAR-10-Training
 5 days on Deep Learning Basic Theory and Code Implementation
 
 - [线性回归笔记](https://blog.leosrealms.top/blog/2025-11-11-linear-regression-model/)
-- [感知机笔记]()
+- [感知机笔记](https://blog.leosrealms.top/blog/2025-11-16-perceptron/)
 - 模型容量、过拟合和欠拟合笔记
 - [数值稳定性笔记](https://blog.leosrealms.top/blog/2025-11-18-numerical-stability---initialization-and-activation-functions/)
 - 更多本地笔记没有发布
