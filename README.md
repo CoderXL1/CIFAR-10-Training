@@ -40,15 +40,17 @@ CIFAR-10-Training
 
 #### 从零学习基础知识 + 用时
 
-1 day on PyTorch API - 详见[笔记](https://blog.leosrealms.top/blog/2025-11-14-pytorch-library-api-summary/)
+1 day on PyTorch API - 详见[笔记](https://blog.leosrealms.top/blog/2025-11-14-pytorch-library-api-summary/)  
 5 days on Deep Learning Basic Theory and Code Implementation
+
 - [线性回归笔记](https://blog.leosrealms.top/blog/2025-11-11-linear-regression-model/)
 - [感知机笔记]()
 - 模型容量、过拟合和欠拟合笔记
 - [数值稳定性笔记](https://blog.leosrealms.top/blog/2025-11-18-numerical-stability---initialization-and-activation-functions/)
 - 更多本地笔记没有发布
-1 day on Pandas 数据处理
-1.5 days on D2L California House Price Prediction Contest
+
+1 day on Pandas 数据处理  
+1.5 days on D2L California House Price Prediction Contest  
 2.5 days on CIFAR-10
 
 #### CIFAR-10 训练
@@ -63,6 +65,7 @@ CIFAR-10-Training
 这里提一下，之所以 4. 直接上了 5 个 batch 进行调参，而没有只使用 `data_batch_1`，是因为后来活佛舍友答应借我 RTX 5070 Ti 一用了~~啊哈哈哈~~***==感激不尽==***。
 
 ##### 详细记录
+
 ==代码经过重构，原始代码已经被一次次覆写掉了。代码可读性应该不错，只不过 debug 的痕迹被抹去了。==
 
 **所有的训练记录（图像和 metrics）+ 模型权重均放置在 `/output/` 里面**
@@ -75,7 +78,7 @@ CIFAR-10-Training
 
 嗯嗯，能跑通
 
-2.  MLP 启动！
+2.  MLP 启动！  
    非常可惜，由于调参过程过于痛苦以及我很暴躁，全程很少有中间模型和参数留存下来，因此过程性记录这一块有些欠缺。  
    这里只能浅浅附一个一开始写的模型和最终的版本来看看
    
@@ -129,8 +132,8 @@ mlp_final_trainer.train(X, y, X_test, y_test)
    
    在 20 个 epoch 之后接近收敛，对于训练集和测试集的准确率都在 50% 左右。
    
-3. CNN
-   标准套模板的 CNN 框架
+3. CNN  
+   标准套模板的 CNN 框架  
    **初试 CNN**
 ```py title=cnn1
 cnn1_net = init_net(nn.Sequential(
