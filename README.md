@@ -1,3 +1,7 @@
+[Also on my blog](https://blog.leosrealms.top/blog/2025-11-21-cifar-10-training/)
+
+---
+
 ### 项目结构
 
 ```
@@ -35,8 +39,6 @@ CIFAR-10-Training
     ├── mlp_first_training_metrics.csv
     └── sfm_fig.png
 ```
-
-[See Also](https://blog.leosrealms.top/blog/2025-11-21-cifar-10-training/)
 
 ### 开发过程
 
