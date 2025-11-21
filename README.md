@@ -71,7 +71,7 @@ CIFAR-10-Training
 
 1. softmax 回归试水
 
-![[../../attachments/sfm_fig.png]]
+![[./output/sfm_fig.png]]
 
 嗯嗯，能跑通
 
@@ -95,7 +95,7 @@ mlp_first_trainer.train(X01, y01, X_test, y_test)
 
    50 epochs：
 
-![[../../attachments/mlp_fig.png]]
+![[./output/mlp_fig.png]]
 
    最终测试集 acc 在 45% 左右，后段疑似出现过拟合。
 >然而，后来发现其实是我忘记在全部 5 个 data_batch 上训练了，只训了第一个，导致在测试集上表现不佳（有 bias）。然而当时我一心以为是过拟合
@@ -125,7 +125,7 @@ mlp_final_trainer.train(X, y, X_test, y_test)
 ```
 
    效果：
-   ![[../../attachments/mlp_final_fig.png]]
+   ![[./output/mlp_final_fig.png]]
    
    在 20 个 epoch 之后接近收敛，对于训练集和测试集的准确率都在 50% 左右。
    
@@ -158,7 +158,7 @@ cnn1_trainer.train(X, y, X_test, y_test)
 ```
 
 图：
-![[../../attachments/cnn1_fig.png]]
+![[./output/cnn1_fig.png]]
 
 此时的我：`地铁老人手机.jpg`  
 经典的过拟合，标准的不合格  
@@ -200,7 +200,7 @@ cnn2_trainer = Trainer(
 cnn2_trainer.train(X, y, X_test, y_test)
 ```
 
-![[../../attachments/cnn2_fig.png]]
+![[./output/cnn2_fig.png]]
 
 使用 BatchNorm + Max Pooling + 最后一层线性层 Dropout + weight_decay，过拟合问题缓解，但是似乎有些欠拟合，模型到不了更高的精度了，最终准确率为 77% 左右。
 
@@ -249,7 +249,7 @@ cnn3_trainer = Trainer(
 cnn3_trainer.train(X, y, X_test, y_test)
 ```
 
-![[../../attachments/cnn3_fig.png]]
+![[./output/cnn3_fig.png]]
 
 测试集 acc 收敛，训练提前终止了。测试集最终准确率为 82%，后面也出现了过拟合。
 
