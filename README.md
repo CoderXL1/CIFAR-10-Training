@@ -95,7 +95,7 @@ mlp_first_trainer.train(X01, y01, X_test, y_test)
 
    50 epochs：
 
-![./output/mlp_first_fig.png](./output/mlp_fig.png)
+![./output/mlp_first_fig.png](./output/mlp_first_fig.png)
 
    最终测试集 acc 在 45% 左右，后段疑似出现过拟合。
 >然而，后来发现其实是我忘记在全部 5 个 data_batch 上训练了，只训了第一个，导致在测试集上表现不佳（有 bias）。然而当时我一心以为是过拟合
