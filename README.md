@@ -36,6 +36,8 @@ CIFAR-10-Training
     └── sfm_fig.png
 ```
 
+[See Also](https://blog.leosrealms.top/blog/2025-11-21-cifar-10-training/)
+
 ### 开发过程
 
 #### 从零学习基础知识 + 用时
